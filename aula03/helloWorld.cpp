@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     // "c" "out" --> cout "saida": escreve/impirme na tela.
-    // "<<": indica o que sairá na tela. o que será escrito.
+    // "<<": (SAÍDA) indica o que sairá na tela. o que será escrito.
     // "<< endl" e "\n": faz uma quebra de linha
     cout << "hello world!\nCurso C++\n";
 
