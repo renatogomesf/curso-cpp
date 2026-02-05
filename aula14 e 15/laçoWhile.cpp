@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    // While
+    // While (primeiro testa e, se for TRUE, executa.)
 
     int num = 1;
 
