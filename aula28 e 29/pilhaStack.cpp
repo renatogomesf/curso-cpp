@@ -5,7 +5,7 @@
 
 int main()
 {
-    // Pilha: estrutura de de dados onde o primeiro elemento inserido é o último a sair... e o úlitmo elemento inserido é o primerio a sair.
+    // Pilha/Stack: estrutura de de dados onde o primeiro elemento inserido é o último a sair... e o úlitmo elemento inserido é o primerio a sair.
 
     // parecido com array (e possui funções parecidas com o JS usando somente o ponto ".". "push()", "pop()")
     // declaração: chama a biblioteca ("std::stack"), define o tipo de dado da stack ("<std::string>") e nomeia a stack ("cartas")
