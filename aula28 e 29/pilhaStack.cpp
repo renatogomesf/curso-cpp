@@ -11,6 +11,16 @@ int main()
     // declaração: chama a biblioteca ("std::stack"), define o tipo de dado da stack ("<std::string>") e nomeia a stack ("cartas")
     std::stack<std::string> cartas;
 
+    // "empty()": verifica se a pilha está vazia ou não. retorna TRUE caso esteja vazia e FALSE caso não esteja.
+    if (cartas.empty())
+    {
+        std::cout << "pilha vazia\n";
+    }
+    else
+    {
+        std::cout << "pilha com cartas\n";
+    }
+
     // "push()": adiciona elemento no final da lista
     cartas.push("rei de copas");
     cartas.push("rei de espadas");
