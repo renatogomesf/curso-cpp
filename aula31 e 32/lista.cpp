@@ -7,7 +7,7 @@ int main()
 {
     // declaração: chama a biblioteca ("std::list"), define o tipo de dado da stack ("<std::int>") e nomeia a stack ("aula"). pode adicionar um tamanho/quantidade de posições também... basta, após o nome, colocar um parêntese com o tamanho. ex: std::list<int> aula(50); --> tamanho 50
     // após o nome declarado desta forma (8,50), indica que terá 8 posições já com valor 50 em todas.
-    std::list<int> aula;
+    std::list<int> aula, teste;
 
     // inserir no meio da lista
     std::list<int>::iterator it;
@@ -36,6 +36,13 @@ int main()
 
     std::cout << "tamanho da lista: " << aula.size() << "\n";
 
+    it = aula.begin();
+    std::advance(it, 3);
+
+    // "erese()": remove um item da lista. o item removido é o imediatamente após à posição passada. recebe o iterator com a posição definida.
+    // para corrigir o fato do delete ocorrer no item depois da posição passada, é possível decrementar dentro do erese.
+    aula.erase(--it);
+
     // "size()": retorna o tamanho.
     int tam = aula.size();
     for (int i = 0; i < tam; i++)
@@ -48,6 +55,17 @@ int main()
         // "pop_back()": remove o elemento do final da lista.
         aula.pop_front();
     }
+
+    // "clear()": limpa completamente a lista.
+    aula.clear();
+
+    for (int i = 0; i < 10; i++)
+    {
+        teste.push_front(i);
+    }
+
+    // "merge()": faz mesclagem de duas listas. neste caso, a lista "aula" recebe a lista "teste" passada no merge. a lista "teste" fica vazia. os itens são realmente transferidos.
+    aula.merge(teste);
 
     return 0;
 }
