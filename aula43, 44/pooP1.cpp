@@ -44,7 +44,8 @@ int main()
 {
 
     // instanciar um novo objeto.
-    // declaração: tipar com a classe "Aviao", nome da variável como ponteiro por não ter constructor "*av1" = "new" nome da classe "Aviao()"
+    // declaração: tipar com a classe "Aviao", nome da variável como ponteiro "*av1" = "new" nome da classe "Aviao()"
+    // a variável precisar ser ponteiro pois a instancia do objeto gera uma reserva de memóriae seu endereço. e a variável como ponteiro aponta para o endereço de memória desse objeto que foi criado para manipula-lo.
     Aviao *av1 = new Aviao();
     Aviao *av2 = new Aviao();
 
