@@ -20,5 +20,11 @@ int main()
         std::cout << elemento << "\n";
     });
 
+
+    for (auto i : n)
+    {
+        std::cout << i << "\n";
+    }
+
     return 0;
 }
